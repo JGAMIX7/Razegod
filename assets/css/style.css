@@ -300,9 +300,9 @@ ion-icon {
    .nav__menu {
       position: static;
       width: auto;
-      height: 100%;
       display: flex;
       align-items: center;
+      transform: translateX(0);
    }
 
    .nav__list {
@@ -310,6 +310,7 @@ ion-icon {
       flex-direction: row;
       align-items: center;
       gap: 50px;
+      height: 100%;
       background-color: transparent;
    }
 
@@ -364,12 +365,7 @@ ion-icon {
    }
 
    .home .home__btn {
-      display: inline-block;
       font-size: 1.5rem;
-      font-weight: 700;
-      color: #242829;
-      background-color: #fff;
-      border: 3px solid #fff;
-      padding: 30px 50px;
+      padding: 20px 40px;
    }
 }

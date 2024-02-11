@@ -1,7 +1,6 @@
 const menu = document.getElementById("menu");
 const toggle = document.getElementById("toggle");
 const close = document.getElementById("close");
-const link = document.getElementById("nav__link");
 
 if (toggle) {
   toggle.addEventListener("click", () => {
@@ -21,5 +20,4 @@ window.addEventListener("scroll", function(){
   let header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 100)
 })
-
 
