@@ -253,14 +253,23 @@ ion-icon {
    }
 }
 
-/* 800x */
-@media screen and (min-width: 800px) {
+/* 1024x */
+@media screen and (min-width: 1024px) {
+   /* ========== Header ========== */
+   .header {
+      backdrop-filter: blur(0);
+      height: 90px;
+      padding: 0 50px;
+   }
 
    /* ========== Home Section ========== */
    .home .home__content {
-      padding: 30% 20px 0;
+      padding: 30% 50px 0;
    }
 
+   .home .home__title {
+      font-size: 6.5rem;
+   }
 }
 
 /* 1280x */
@@ -333,7 +342,11 @@ ion-icon {
    }
 
    .home .home__title {
-      font-size: 6rem;
+      font-size: 7rem;
+   }
+
+   .home .home__description {
+      font-size: 1.5rem;
    }
 }
 
