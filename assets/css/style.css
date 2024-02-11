@@ -1,0 +1,375 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Inter", sans-serif;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   min-height: 100vh;
+}
+
+/* ========== Style global ========== */
+h1 {
+   letter-spacing: 3px;
+}
+
+h2,
+p,
+a {
+   letter-spacing: 2px;
+}
+
+h2 {
+   font-size: 3.2rem;
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+/* ========== Variables ========== */
+:root {
+   --almost-black: rgba(0, 0, 0, 0.5);
+   --grey: #242829;
+   --white: #ffffff;
+}
+
+/* ========== Header ========== */
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   backdrop-filter: blur(8px);
+   width: 100%;
+   height: 80px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px;
+   z-index: 1;
+}
+
+.header .logo {
+   height: 50px;
+}
+
+/* ========== Navigation ========== */
+ion-icon {
+   font-size: 3.125rem;
+}
+
+.toggle {
+   color: var(--white);
+}
+
+.close {
+   color: var(--grey);
+   position: absolute;
+   top: 13px;
+   right: 20px;
+}
+
+.nav__menu {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 80%;
+   transform: translateX(100%);
+   transition: all 0.3s;
+   z-index: 2;
+}
+
+.nav__menu.active {
+   transform: translateX(0);
+}
+
+.nav__list {
+   height: 100vh;
+   padding-top: 200px;
+   display: flex;
+   flex-direction: column;
+   /* justify-content: center; */
+   align-items: center;
+   gap: 30px;
+   background-color: white;
+}
+
+.nav__link {
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: var(--grey);
+   position: relative;
+}
+
+.nav__link::after {
+   content: "";
+   position: absolute;
+   width: 0%;
+   height: 3px;
+   background-color: var(--grey);
+   bottom: -3px;
+   left: 0;
+}
+
+.nav__link:hover::after {
+   width: 100%;
+   transition: all ease 0.3s;
+}
+
+/* ========== Home Section ========== */
+.home {
+   background: center / cover no-repeat url(../images/background/bg-small-device.png);
+   width: 100%;
+   height: 100vh;
+   /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.home .home__content {
+   padding: 50% 20px 0;
+}
+
+.home .home__title {
+   font-size: 4rem;
+   font-weight: 900;
+   color: var(--white);
+   line-height: 1;
+}
+
+.home .home__description {
+   font-size: 1.375rem;
+   font-weight: 500;
+   color: var(--white);
+   margin: 20px 0;
+}
+
+.home .home__btn {
+   display: inline-block;
+   font-size: 1.125rem;
+   font-weight: 700;
+   color: #242829;
+   background-color: #fff;
+   border: 3px solid #fff;
+   padding: 15px 25px;
+}
+
+.home .home__btn:hover {
+   color: #fff;
+   background-color: transparent;
+   border: 3px solid #fff;
+   transition: all 0.3s;
+}
+
+/* ========== Albums section ========== */
+.albums {
+   width: 100%;
+   background: center / cover no-repeat url(../images/background/albums-bg-small-device.jpg);
+}
+
+/* 
+.albums .albums__title {}
+
+.albums .albums__covers {}
+
+.albums .albums__covers .album {}
+
+.albums .albums__covers .album .album-cover {
+   width: 100%;
+   height: 100%;
+} */
+
+/* ========== Style global ========== */
+/* ========== Style global ========== */
+/* ========== Style global ========== */
+/* ========== Style global ========== */
+/* ========== Style global ========== */
+/* ========== Style global ========== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========= Resposive ========= */
+/* 640x */
+@media screen and (min-width: 640px) {
+
+   /* ========== Home Section ========== */
+   .home {
+      background: center / cover no-repeat url(../images/background/bg-medium-device.png);
+   }
+
+   .home .home__content {
+      padding: 45% 20px 0;
+   }
+
+   .home .home__title {
+      font-size: 5rem;
+   }
+}
+
+/* 800x */
+@media screen and (min-width: 800px) {
+
+   /* ========== Home Section ========== */
+   .home .home__content {
+      padding: 40% 20px 0;
+   }
+
+   .home .home__title {
+      font-size: 5.5rem;
+   }
+}
+
+/* 800x */
+@media screen and (min-width: 800px) {
+
+   /* ========== Home Section ========== */
+   .home .home__content {
+      padding: 30% 20px 0;
+   }
+
+}
+
+/* 1280x */
+@media screen and (min-width: 1280px) {
+
+   /* ========== Header ========== */
+   .header {
+      backdrop-filter: blur(0);
+      height: 90px;
+      padding: 0 80px;
+   }
+
+   .header.sticky {
+      background-color: var(--white);
+      transition: .3s;
+   }
+
+   .header.sticky .nav__link {
+      color: var(--grey);
+      transition: .3s;
+   }
+
+   .header.sticky .nav__link::after {
+      background-color: var(--grey);
+   }
+
+   .header .logo {
+      height: 60px;
+   }
+
+   /* ========== Navigation ========== */
+   .toggle,
+   .close {
+      display: none;
+   }
+
+   .nav__menu {
+      position: static;
+      width: auto;
+      height: 100%;
+      display: flex;
+      align-items: center;
+   }
+
+   .nav__list {
+      padding: 0;
+      flex-direction: row;
+      align-items: center;
+      gap: 50px;
+      background-color: transparent;
+   }
+
+   .nav__link {
+      color: var(--white);
+      font-weight: 700;
+   }
+
+   .nav__link::after {
+      background-color: var(--white);
+   }
+
+   /* ========== Home Section ========== */
+   .home {
+      background: center / cover no-repeat url(../images/background/bg-large-device.png);
+   }
+
+   .home .home__content {
+      padding: 20% 80px 0;
+   }
+
+   .home .home__title {
+      font-size: 6rem;
+   }
+}
+
+
+/* 1600x */
+@media screen and (min-width: 1600px) {
+
+   /* ========== Header ========== */
+   .header {
+      height: 100px;
+      padding: 0 120px;
+   }
+
+   .header .logo {
+      height: 70px;
+   }
+
+   /* ========== Home Section ========== */
+   .home .home__content {
+      padding: 15% 120px 0;
+   }
+
+   .home .home__title {
+      font-size: 9.5rem;
+   }
+
+   .home .home__description {
+      font-size: 2.5rem;
+   }
+
+   .home .home__btn {
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #242829;
+      background-color: #fff;
+      border: 3px solid #fff;
+      padding: 30px 50px;
+   }
+}
