@@ -234,6 +234,7 @@ ion-icon {
 
 /* About section */
 .about {
+   background: center / cover no-repeat url(../images/background/about-bg.jpg);
    width: 100%;
    padding: 20px;
    display: flex;
@@ -250,12 +251,12 @@ ion-icon {
 
 .right-side__title{
    font-size: 2rem;
-   color: var(--grey);
+   color: var(--white);
 }
 
 .right-side__description {
    font-size: 1rem;
-   color: var(--grey);
+   color: var(--white);
 }
 
 
