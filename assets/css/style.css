@@ -58,7 +58,7 @@ section{
    position: fixed;
    top: 0;
    left: 0;
-   backdrop-filter: blur(8px);
+   backdrop-filter: blur(16px);
    width: 100%;
    height: 80px;
    display: flex;
@@ -236,7 +236,7 @@ ion-icon {
 .about {
    background: center / cover no-repeat url(../images/background/about-bg.jpg);
    width: 100%;
-   padding: 20px;
+   padding: 30px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -404,17 +404,18 @@ ion-icon {
    }
 
    .header.sticky {
-      background-color: var(--white);
+      /* background-color: var(--white); */
+      backdrop-filter: blur(32px);
       transition: .3s;
    }
 
    .header.sticky .nav__link {
-      color: var(--grey);
+      /* color: var(--grey); */
       transition: .3s;
    }
 
    .header.sticky .nav__link::after {
-      background-color: var(--grey);
+      /* background-color: var(--grey); */
    }
 
    .logo {
@@ -488,7 +489,6 @@ ion-icon {
 @media screen and (min-width: 1280px) {
    /* ========== Header ========== */
    .header {
-      backdrop-filter: blur(0);
       padding: 0 80px;
    }
 
