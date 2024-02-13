@@ -138,25 +138,25 @@ ion-icon {
    /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
-.home .home__content {
+.home__content {
    padding: 50% 20px 0;
 }
 
-.home .home__title {
+.home__title {
    font-size: 4rem;
    font-weight: 900;
    color: var(--white);
    line-height: 1;
 }
 
-.home .home__description {
+.home__description {
    font-size: 1.375rem;
    font-weight: 500;
    color: var(--white);
    margin: 20px 0;
 }
 
-.home .home__btn {
+.home__btn {
    display: inline-block;
    font-size: 1.125rem;
    font-weight: 700;
@@ -166,7 +166,7 @@ ion-icon {
    padding: 15px 25px;
 }
 
-.home .home__btn:hover {
+.home__btn:hover {
    color: #fff;
    background-color: transparent;
    border: 3px solid #fff;
@@ -174,23 +174,70 @@ ion-icon {
 }
 
 /* ========== Albums section ========== */
-.albums {
+.albums-section {
    width: 100%;
+   height: auto;
    background: center / cover no-repeat url(../images/background/albums-bg-small-device.jpg);
+   padding: 20px;
+
 }
 
-/* 
-.albums .albums__title {}
+.albums-section__title{
+   text-align: center;
+}
 
-.albums .albums__covers {}
+.albums {
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 20px;
+}
 
-.albums .albums__covers .album {}
+.album {
+   width: 165px;
+   height: 220px;
+   border-radius: 5%;
+   overflow: hidden;
+   background-color: rgba(88, 88, 88, 50%);
+}
 
-.albums .albums__covers .album .album-cover {
+.cover-container {
    width: 100%;
-   height: 100%;
-} */
+   height: 165px;
+}
 
+.albums-section__title {
+   font-size: 2rem;
+   color: var(--white);
+}
+
+.album-infos {
+   padding: 5px 10px;
+}
+
+.album__title,
+.release-date {
+   color: var(--white);
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   letter-spacing: 0px;
+}
+
+.album__title {
+   font-size: 1.25rem;
+   font-weight: 800;
+}
+
+
+
+
+.about__left-side{
+   width: 50px;
+   height: 50px;
+}
 
 
 
@@ -214,15 +261,15 @@ ion-icon {
       background: center / cover no-repeat url(../images/background/bg-medium-device.png);
    }
 
-   .home .home__content {
+   .home__content {
       padding: 45% 20px 0;
    }
 
-   .home .home__title {
+   .home__title {
       font-size: 4rem;
    }
 
-   .home__description{
+   .home__description {
       font-size: 1.125rem;
    }
 }
@@ -233,7 +280,7 @@ ion-icon {
       width: 100%;
       transform: translateY(-100%);
    }
-   
+
    .nav__menu.active {
       transform: translateY(0);
    }
@@ -246,17 +293,43 @@ ion-icon {
    }
 
    /* ========== Home Section ========== */
-   .home .home__content {
+   .home__content {
       padding: 30% 20px 0;
    }
 
-   .home .home__title {
+   .home__title {
       font-size: 5.5rem;
+   }
+
+   /* ========== Albums Section =========== */
+   .albums-section {
+   width: 100%;
+   height: auto;
+   background: center / cover no-repeat url(../images/background/albums-bg-small-device.jpg);
+   padding: 20px;
+
+}
+   .albums {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+   }
+   
+   .album {
+      width: 200px;
+      height: 255px;
+      border-radius: 5%;
+      overflow: hidden;
+      background-color: rgba(88, 88, 88, 50%);
    }
 }
 
 /* 1024x */
 @media screen and (min-width: 1024px) {
+
    /* ========== Header ========== */
    .header {
       backdrop-filter: blur(0);
@@ -278,7 +351,7 @@ ion-icon {
       background-color: var(--grey);
    }
 
-   .header .logo {
+   .logo {
       height: 60px;
    }
 
@@ -293,7 +366,7 @@ ion-icon {
       width: auto;
       display: flex;
       align-items: center;
-      transform: translate(0,0);
+      transform: translate(0, 0);
    }
 
    .nav__list {
@@ -316,17 +389,18 @@ ion-icon {
    }
 
    /* ========== Home Section ========== */
-   .home .home__content {
+   .home__content {
       padding: 20% 50px 0;
    }
 
-   .home .home__title {
+   .home__title {
       font-size: 6.5rem;
    }
 }
 
 /* 1280x */
 @media screen and (min-width: 1280px) {
+
    /* ========== Header ========== */
    .header {
       backdrop-filter: blur(0);
@@ -339,7 +413,7 @@ ion-icon {
       background: center / cover no-repeat url(../images/background/bg-large-device.png);
    }
 
-   .home .home__content {
+   .home__content {
       padding: 15% 80px 0;
    }
 
@@ -347,7 +421,7 @@ ion-icon {
       font-size: 7rem;
    }
 
-   .home .home__description {
+   .home__description {
       font-size: 1.5rem;
    }
 }
@@ -362,24 +436,24 @@ ion-icon {
       padding: 0 120px;
    }
 
-   .header .logo {
+   .logo {
       height: 70px;
    }
 
    /* ========== Home Section ========== */
-   .home .home__content {
+   .home__content {
       padding: 15% 120px 0;
    }
 
-   .home .home__title {
+   .home__title {
       font-size: 9.5rem;
    }
 
-   .home .home__description {
+   .home__description {
       font-size: 2.5rem;
    }
 
-   .home .home__btn {
+   .home__btn {
       font-size: 1.5rem;
       padding: 20px 40px;
    }
