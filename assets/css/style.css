@@ -179,11 +179,12 @@ ion-icon {
    height: auto;
    background: center / cover no-repeat url(../images/background/albums-bg-small-device.jpg);
    padding: 20px;
-
 }
 
-.albums-section__title{
+.albums-section__title {
    text-align: center;
+   font-size: 2rem;
+   color: var(--white);
 }
 
 .albums {
@@ -208,11 +209,6 @@ ion-icon {
    height: 165px;
 }
 
-.albums-section__title {
-   font-size: 2rem;
-   color: var(--white);
-}
-
 .album-infos {
    padding: 5px 10px;
 }
@@ -233,8 +229,8 @@ ion-icon {
 
 
 
-
-.about__left-side{
+/* About section */
+.about__left-side {
    width: 50px;
    height: 50px;
 }
@@ -252,10 +248,15 @@ ion-icon {
 
 
 
+
+
+
+
+
+
 /* ========= Resposive ========= */
 /* 640x */
 @media screen and (min-width: 640px) {
-
    /* ========== Home Section ========== */
    .home {
       background: center / cover no-repeat url(../images/background/bg-medium-device.png);
@@ -271,6 +272,24 @@ ion-icon {
 
    .home__description {
       font-size: 1.125rem;
+   }
+
+   /* ========== Albums Section =========== */
+   .albums-section {
+      width: 100%;
+      height: auto;
+      background: center / cover no-repeat url(../images/background/albums-bg-small-device.jpg);
+      padding: 20px 20px 30px 20px;
+   }
+
+   .albums {
+      margin-top: 30px;
+      gap: 20px;
+   }
+
+   .album {
+      width: 200px;
+      height: 218px;
    }
 }
 
@@ -303,27 +322,22 @@ ion-icon {
 
    /* ========== Albums Section =========== */
    .albums-section {
-   width: 100%;
-   height: auto;
-   background: center / cover no-repeat url(../images/background/albums-bg-small-device.jpg);
-   padding: 20px;
+      /* width: 100%;
+      height: auto; */
+      padding: 50px;
+   }
 
-}
    .albums {
       margin-top: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 20px;
    }
-   
+
+   .cover-container {
+      height: 160px;
+   }
+
    .album {
-      width: 200px;
-      height: 255px;
-      border-radius: 5%;
-      overflow: hidden;
-      background-color: rgba(88, 88, 88, 50%);
+      width: 160px;
+      height: 213px;
    }
 }
 
@@ -339,12 +353,12 @@ ion-icon {
 
    .header.sticky {
       background-color: var(--white);
-      transition: .3s;
+      transition: 0.3s;
    }
 
    .header.sticky .nav__link {
       color: var(--grey);
-      transition: .3s;
+      transition: 0.3s;
    }
 
    .header.sticky .nav__link::after {
@@ -396,6 +410,20 @@ ion-icon {
    .home__title {
       font-size: 6.5rem;
    }
+
+   /* ========== Albums Section =========== */
+   .albums {
+      gap: 30px;
+   }
+
+   .cover-container{
+      height: 200px;
+   }
+
+   .album {
+      width: 200px;
+      height: 255px;
+   }
 }
 
 /* 1280x */
@@ -424,8 +452,48 @@ ion-icon {
    .home__description {
       font-size: 1.5rem;
    }
+
+   /* ========== Albums Section =========== */
+   .albums-section {
+      /* padding: 50px; */
+   }
+   .albums {
+      gap: 50px;
+   }
+
+   .cover-container{
+      height: 200px;
+   }
+
+   .album {
+      width: 200px;
+      height: 255px;
+   }
 }
 
+/* ===== Albums section for large devices ===== */
+@media screen and (min-width: 1376px){
+   /* ========== Albums Section =========== */
+   .albums {
+      gap: 40px 100px;
+   }
+
+   .cover-container{
+      height: 213px;
+   }
+
+   .album {
+      width: 213px;
+      height: 267px;
+   }
+}
+
+@media screen and (min-width: 1440px){
+   /* ========== Albums Section =========== */
+   .albums {
+      /* gap: 40px 90px; */
+   }
+}
 
 /* 1600x */
 @media screen and (min-width: 1600px) {
@@ -456,5 +524,22 @@ ion-icon {
    .home__btn {
       font-size: 1.5rem;
       padding: 20px 40px;
+   }
+
+   /* ========== Albums Section =========== */
+   .albums-section {
+      padding: 50px;
+   }
+   .albums {
+      gap: 50px;
+   }
+
+   .cover-container{
+      height: 200px;
+   }
+
+   .album {
+      width: 200px;
+      height: 255px;
    }
 }
