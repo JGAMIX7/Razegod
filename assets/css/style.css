@@ -238,7 +238,7 @@ ion-icon {
 }
 
 .about__left-side {
-   width: clamp(100%, 370px, 400px  );
+   width: clamp(100%, 370px, 400px);
    height: 450px;
    margin-bottom: 20px;
 }
