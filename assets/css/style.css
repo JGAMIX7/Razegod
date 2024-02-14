@@ -404,18 +404,11 @@ ion-icon {
    }
 
    .header.sticky {
-      /* background-color: var(--white); */
       backdrop-filter: blur(32px);
-      transition: .3s;
    }
 
    .header.sticky .nav__link {
-      /* color: var(--grey); */
       transition: .3s;
-   }
-
-   .header.sticky .nav__link::after {
-      /* background-color: var(--grey); */
    }
 
    .logo {
@@ -515,7 +508,6 @@ ion-icon {
    }
 
    .albums {
-      margin-top: 20px;
       gap: 50px;
    }
 
@@ -529,6 +521,7 @@ ion-icon {
    }
 
    /* ========== About Section =========== */
+
    .right-side__title{
       font-size: 3rem;
    }
@@ -541,7 +534,9 @@ ion-icon {
       padding: 20px;
    }
    .albums {
+      max-width: 1200px;
       gap: 40px 100px;
+      margin: 30px auto;
    }
 
    .cover-container{
@@ -594,7 +589,9 @@ ion-icon {
 
    /* ========== Albums Section =========== */
    .albums {
-      gap: 50px 145px;
+      gap: 50px 130px;
+      max-width: 1500px;
+      height: auto;
    }
 
    .cover-container{
