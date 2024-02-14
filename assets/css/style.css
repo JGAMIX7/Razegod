@@ -24,10 +24,6 @@ a {
    letter-spacing: 2px;
 }
 
-/* h2 {
-   font-size: 3.2rem;
-} */
-
 ul {
    list-style: none;
 }
@@ -50,6 +46,7 @@ section {
 :root {
    --almost-black: rgba(0, 0, 0, 0.5);
    --grey: #242829;
+   --light-blue: #7978FF;
    --white: #ffffff;
 }
 
@@ -263,15 +260,14 @@ ion-icon {
 .shop {
    /* background: #F0F0F0; */
    /* background-color: #009cff; */
-   background-color: #7978FF;
    /* background-color: #00A9FF; */
+   background-color: var(--light-blue);
    padding: 20px;
 }
 
 .shop__title {
    font-size: 2rem;
    color: var(--white);
-   /* color: var(--grey); */
 }
 
 .shop__description {
@@ -279,7 +275,6 @@ ion-icon {
    font-size: 1.125rem;
    font-weight: 700;
    margin-bottom: 20px;
-   /* color: var(--grey); */
 }
 
 .shop-section {
@@ -296,12 +291,12 @@ ion-icon {
 
 .section-title {
    color: white;
-   /* color: var(--grey); */
    text-align: center;
 }
 
 .shop__container {
    width: 100%;
+   padding-bottom: 30px;
    margin-top: 30px;
    display: flex;
    flex-direction: column;
@@ -342,10 +337,28 @@ ion-icon {
    font-weight: 700;
 }
 
-
 .eva1,
 .mewtwo{
    display: none;
+}
+
+/* ========= Footer ========= */
+.footer{
+   width: 100%;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+}
+
+.footer a i{
+   font-size: 3rem;
+   color: var(--grey);
+}
+
+.footer a:hover{
+   transform: scale(1.15);
+   transition: .3s ease;
 }
 
 /* ========= Resposive ========= */
@@ -506,11 +519,19 @@ ion-icon {
       width: 160px;
       height: 213px;
    }
+
+   .shop__container{
+      padding-bottom: 0;
+   }
+
+   /* ========== Footer =========== */
+   .footer{
+      gap: 50px;
+   }
 }
 
 /* 1024x */
 @media screen and (min-width: 1024px) {
-
    /* ========== Header ========== */
    .header {
       backdrop-filter: blur(0);
@@ -672,7 +693,6 @@ ion-icon {
 
 /* ===== Albums section for large devices ===== */
 @media screen and (min-width: 1376px) {
-
    /* ========== Albums Section =========== */
    .albums-section {
       padding: 20px;
