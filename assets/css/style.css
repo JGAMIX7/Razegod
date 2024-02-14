@@ -65,7 +65,7 @@ section {
    justify-content: space-between;
    align-items: center;
    padding: 0 20px;
-   z-index: 1;
+   z-index: 100;
 }
 
 .header .logo {
@@ -261,19 +261,25 @@ ion-icon {
 
 /* ========== Shop section ========== */
 .shop {
-   background: blue;
+   /* background: #F0F0F0; */
+   /* background-color: #009cff; */
+   background-color: #7978FF;
+   /* background-color: #00A9FF; */
    padding: 20px;
 }
 
 .shop__title {
    font-size: 2rem;
    color: var(--white);
+   /* color: var(--grey); */
 }
 
 .shop__description {
    color: var(--white);
+   font-size: 1.125rem;
    font-weight: 700;
    margin-bottom: 20px;
+   /* color: var(--grey); */
 }
 
 .shop-section {
@@ -290,6 +296,7 @@ ion-icon {
 
 .section-title {
    color: white;
+   /* color: var(--grey); */
    text-align: center;
 }
 
@@ -333,6 +340,12 @@ ion-icon {
 .product-price {
    font-size: 1.125rem;
    font-weight: 700;
+}
+
+
+.eva1,
+.mewtwo{
+   display: none;
 }
 
 /* ========= Resposive ========= */
@@ -437,12 +450,15 @@ ion-icon {
    .product-color {
       margin: 5px 0;
       font-size: 0.875rem;
-      font-weight: 500;
    }
 
    .product-price {
       font-size: 1.125rem;
-      font-weight: 700;
+   }
+
+   .eva1,
+   .mewtwo{
+   display: none;
    }
 }
 
@@ -622,9 +638,35 @@ ion-icon {
    }
 
    /* ========== About Section =========== */
-
    .right-side__title {
       font-size: 3rem;
+   }
+
+   /* ========== Shop Section =========== */
+   .shop{
+      position: relative;
+   }
+
+   .product-card{
+      z-index: 2;
+   }
+
+   .eva1,
+   .mewtwo{
+   display: block;
+   width: auto;
+   height: 400px;
+   position: absolute;
+   }
+
+   .mewtwo{
+      bottom: 100px;
+      left: 50px;
+   }
+
+   .eva1{
+      bottom: 100px;
+      right: 50px;
    }
 }
 
